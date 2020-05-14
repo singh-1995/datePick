@@ -163,8 +163,7 @@
 
             var d = day;
 
-            var date = new Date(dateMonth.year, dateMonth.month - 1, d);
-            console.log(date);
+            var date = new Date(dateMonth.year, dateMonth.month, d);
             var week = date.getDay();
             var y = date.getFullYear(),
                 m = date.getMonth();
