@@ -160,9 +160,7 @@
         })
         //输出查询日期
         function logDay(day) {
-
             var d = day;
-
             var date = new Date(dateMonth.year, dateMonth.month, d);
             var week = date.getDay();
             var y = date.getFullYear(),
@@ -178,7 +176,6 @@
                 }
             }
         }
-
         main.addEventListener('click', function (e) {
 
             var target = e.target;
@@ -197,22 +194,17 @@
         })
 
         main.addEventListener('click', function (e) {
-
             var target = e.target;
             var dateDay = target.dataset.day;
             if (target.nodeName.toLowerCase() !== 'td') return;
             dateDay = (dateDay < 10 && dateDay > 0) ? '0' + dateDay : dateDay;
             logDay(dateDay);
-
             //获取年月日
             // var date = new Date(dateMonth.year, dateMonth.month-1, dateDay)
             // input.value = format(date);
 
             // main.classList.remove('date-main-active');
             // state = false;
-
-
-
         })
     };
 
